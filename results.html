@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Matthew Roberts">
+    <meta name="description" content="Results">
+    <link rel="stylesheet" href="C:/Users/Matthew HP/Dropbox/QCC/Classes/ET712/Projects/Portfolio/basic.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fru3hoy.css">
+    <title>Matthew Roberts Coding Portfolio-Results</title>
+  </head>
+  <body class="bodyIssue">
+    <div class="results">
+    </div>
+    <button onclick="location.href='index.html';" type="button" class="navButton" id="homeSheet">Home</button>
+    <script type="text/javascript">
+      var resultsList = document.getElementByClass('results');
+      new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultsList.append('${name}: ${value}');
+        resultsList.append(document.createElement('br'));
+      });
+      </script>
+  </body>
+</html>
